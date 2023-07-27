@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GASAL | Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+    <section>
+        <div class="gototop">
+            <i class="fa-solid fa-arrow-up fa-bounce"></i>
+        </div>
+    </section>
+    <section>
+        <div class="sideicons">
+            <i class="fa-solid fa-square-up-right fa-shake" id="sidebtn"></i>
+            <div class="actbtn">
+                <a href="#about"><i class="bbtn fa-solid fa-address-card"></i></a>
+                <a href="#services"><i class="bbtn fa-solid fa-table-columns"></i></a>
+                <a href="#portfolio"><i class="bbtn fa-solid fa-briefcase"></i></a>
+                <a href="#contact"><i class="bbtn fa-solid fa-envelope"></i></a>
+            </div>
+        </div>
+    </section>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.png" class="logo" alt="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark fas" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars fas" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Fullstack MERN Devoloper</p>
+                <h1>Hi, I'm <span style="color: #ff0055;">Muhammed Gasal</span> <br>from India</h1>
+            </div>
+        </div>
+    </div>
+
+    <!-- ABOUT -->
+    <section id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/me.jpg" alt="MyImage" data-aos="fade-right">
+                </div>
+                <div class="about-col-2" data-aos="fade-up">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        As a MERN web developer, UI/UX designer, and software programmer, I craft user-friendly web
+                        applications with a keen eye for aesthetics. I bring a diverse skill set, clean code practices,
+                        and a passion for continuous learning to deliver innovative solutions that meet clients' needs.
+                        <br><br>
+                        My approach to development and design revolves around clean and efficient code practices,
+                        adhering to industry standards and best practices. I am also familiar with version control
+                        systems like Git, which aids in collaboration and code management.
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('eduacation')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br> Designing Web/App Interfaces</li>
+                            <li><span>Web Devolopment</span><br> Web application devolopment</li>
+                            <li><span>App Devolopment</span><br> Building Android/iOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2023 - Current</span><br> Learning Java SpringBoot</li>
+                            <li><span>2021-2022</span><br> Team lead @ StarApp LLC</li>
+                            <li><span>2020 - 2021</span><br> Freelance Web devolopment</li>
+                            <li><span>2019 - 2020</span><br> Freelance Designing</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="eduacation">
+                        <ul>
+                            <li><span>2023</span><br> Self Learing @ BroToType</li>
+                            <li><span>2022</span><br> Btech in CSE</li>
+                            <li><span>2021 - 2022</span><br> Higher Secondary</li>
+                            <li><span>2020</span><br> SSLC passOut</li>
+                        </ul>
+                    </div>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SERVICES -->
+    <section id="services">
+        <div class="container" data-aos="zoom-in">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Designing</h2>
+                    <p>
+                        As a web designer, I create visually captivating and intuitive user interfaces. With a focus on
+                        user experience, I craft designs that engage and delight users while ensuring seamless
+                        functionality.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Designing</h2>
+                    <p>
+                        As a UI/UX designer, I create visually appealing and intuitive user interfaces that enhance the
+                        overall user experience. I combine modern design principles with user research to deliver
+                        engaging and user-centric designs.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Devolopment</h2>
+                    <p>
+                        I blend creativity with technical expertise to build visually stunning and user-friendly mobile
+                        applications. With a passion for cutting-edge technology, I strive to create innovative
+                        solutions that deliver a seamless and engaging user experience.
+                    </p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- PORTFOLIO -->
+    <section id="portfolio">
+        <div class="container">
+            <h1 class="sub-title" data-aos="fade-right">My Works</h1>
+            <div class="work-list">
+                <div class="work" data-aos="zoom-in-up">
+                    <img src="images/work.jpeg" alt="work">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>
+                            The App connect you to the people across the world now availuble in both Appstore and
+                            Playstore.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up">
+                    <img src="images/work3.jpeg" alt="work">
+                    <div class="layer">
+                        <h3>Business Web App</h3>
+                        <p>
+                            The Medical and other business applications both for administrator controll and user
+                            friendly.
+                        </p>
+                        <a href="https://md.healthplix.com/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work" data-aos="zoom-in-up">
+                    <img src="images/work2.jpeg" alt="work">
+                    <div class="layer">
+                        <h3>Academy Website</h3>
+                        <p>
+                            The Basic Football Academy website for showcasing theeir achivements infront of the world
+                            and making a computer control administration.
+                        </p>
+                        <a href="http://www.eifafootballacademy.com/"><i
+                                class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn" data-aos="flip-up">See more</a>
+        </div>
+    </section>
+
+    <!-- Progress -->
+    <section id="progress">
+        <div class="container">
+            <div class="row">
+                <div class="progress-left" data-aos="fade-up">
+                    <h1 class="sub-title">My Progress</h1>
+                    <div class="desc">
+                        <h2>"Evolution of Expertise: Showcasing my Skill Progress"</h2>
+                        <p>
+                            I am excited to share with you the journey of my skill development and professional growth.
+                            This section is dedicated to highlighting the evolution of my expertise across various
+                            disciplines. From the early stages of learning to mastering advanced techniques, I'm proud
+                            to demonstrate how my dedication and passion have propelled me forward.
+                        </p>
+                    </div>
+                </div>
+                <div class="progress-right">
+                    <div class="prog" data-aos="fade-up">
+                        <div class="progt">
+                            <h2>HTML</h2>
+                            <span>92%</span>
+                        </div>
+                        <div class="progbar p1">
+                            <div class="progin"></div>
+                        </div>
+                    </div>
+                    <div class="prog" data-aos="fade-up">
+                        <div class="progt">
+                            <h2>CSS</h2>
+                            <span>87%</span>
+                        </div>
+                        <div class="progbar p2">
+                            <div class="progin"></div>
+                        </div>
+                    </div>
+                    <div class="prog" data-aos="fade-up">
+                        <div class="progt">
+                            <h2>JAVASCRIPT</h2>
+                            <span>82%</span>
+                        </div>
+                        <div class="progbar p3">
+                            <div class="progin"></div>
+                        </div>
+                    </div>
+                    <div class="prog" data-aos="fade-up">
+                        <div class="progt">
+                            <h2>JAVA</h2>
+                            <span>67%</span>
+                        </div>
+                        <div class="progbar p4">
+                            <div class="progin"></div>
+                        </div>
+                    </div>
+                    <div class="prog" data-aos="fade-up">
+                        <div class="progt">
+                            <h2>C</h2>
+                            <span>60%</span>
+                        </div>
+                        <div class="progbar p5">
+                            <div class="progin"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left" data-aos="fade-up">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fas fa-paper-plane"></i> gasalgasal246@gmail.com</p>
+                    <p><i class="fas fa-phone-square-alt"></i> +919447771103</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100074517474534"><i
+                                class="fa-brands fa-facebook"></i></a>
+                        <a href="https://twitter.com/gasal_c"><i class="fa-brands fa-twitter-square"></i></a>
+                        <a href="https://instagram.com/gazal_kmml_?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D"><i
+                                class="fa-brands fa-square-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammed-gasal-c-259283211/"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="src/GasalTest.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right" data-aos="fade-down-left">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" id="name" onchange="namecheck()" placeholder="Your Name" required>
+                        <span class="err" id="nameerr"></span>
+
+                        <input type="email" name="Email" id="email" placeholder="Your Email" onchange="emailcheck()" required>
+                        <span class="err" id="emailerr"></span>
+
+                        <textarea name="Message" id="message" onchange="messagecheck()" rows="6" placeholder="Your Message"></textarea>
+                        <span class="err" id="messageerr"></span>
+
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright © Muhammed Gasal. Fully Handwritten code.. 💕</p>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous"></script>
+    <script>
+        $(document).ready(() => {
+            $(".gototop").click(() => {
+                $(window).scrollTop(0);
+            })
+            $('#sidebtn').click(() => {
+                $('.actbtn').fadeToggle(500)
+            })
+        })
+    </script>
+    <!-- ################## -->
+    <script>
+        var nameErr = document.getElementById('nameerr');
+        var emailErr = document.getElementById('emailerr');
+        var msgErr = document.getElementById('messageerr');
+
+        function namecheck(){
+            let name = document.getElementById('name').value;
+            if(!name.match(/^[a-zA-Z]*$/)){
+                nameErr.innerHTML = "Special charecters and numbers not allowed";
+                return false;
+            }
+            if(name.length < 3){
+                nameErr.innerHTML="Name Should have minimum 3 charecters.";
+                return false;
+            }
+            nameErr.innerHTML = '<i class="fa-regular fa-circle-check" style="color:green;">'
+            return true;
+        }
+
+        emailcheck = () => {
+            let email = document.getElementById('email').value;
+            if(email.length < 1){
+                emailErr.innerHTML = "Not meeting minimum charecters"
+                return false;
+            }
+            if(!email.match(/^[a-zA-Z0-9]+@/)){
+                emailErr.innerHTML = "Not valid mail id"
+                return false;
+            }
+            emailErr.innerHTML = '<i class="fa-regular fa-circle-check" style="color:green;">'
+            return true;
+        }
+
+        messagecheck = () => {
+            let msg = document.getElementById('message').value;
+            if(msg.length < 15){
+                msgErr.innerHTML = "Enter minimum 15 charecters...";
+                return false;
+            }
+            msgErr.innerHTML = '<i class="fa-regular fa-circle-check" style="color:green;">'
+            return true;
+        }
+
+    </script>
+    <!-- #################### -->
+    <script>
+        var tablinks = document.getElementsByClassName('tab-links');
+        var tabcontents = document.getElementsByClassName('tab-contents');
+        opentab = (tabname) => {
+            for (tablink of tablinks) {
+                tablink.classList.remove('active-link');
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove('active-tab');
+            }
+            event.currentTarget.classList.add("active-link")
+            document.getElementById(tabname).classList.add("active-tab")
+        }
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+        openmenu = () => {
+            sidemenu.style.right = "0";
+        }
+        closemenu = () => {
+            sidemenu.style.right = "-255px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbxxEL_5o_EIyrB60ikbUacbmstBnSsYFlEUeFteaIEUE71bJTjon95Yzh9lDWuaHftK/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById('msg');
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent successfully";
+                    setTimeout(() => {
+                        msg.innerHTML = "";
+                    }, 2000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+</body>
+
+</html>
